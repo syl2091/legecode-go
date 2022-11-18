@@ -7,6 +7,6 @@ import (
 
 func TestName(t *testing.T) {
 	s := "lege"
-	palindrome := longestPalindrome(s)
+	palindrome := longestPalindrome1(s)
 	fmt.Println(palindrome)
 }
