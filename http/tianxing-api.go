@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-func main() {
-	get, err := http.Get("https://coronavirus.m.pipedream.net/")
+func pyq(apiKey string) {
+	get, err := http.Get(fmt.Sprintf("https://apis.tianapi.com/pyqwenan/index?key=%s", apiKey))
 	if err != nil {
 		println(err)
 	}
